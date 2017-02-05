@@ -1,0 +1,27 @@
+{{message}}
+<div layout="column" ng-show="isAdmin === true">
+    <div>
+        <a href="/b/admin/">Django admin page</a>
+    </div>
+    <div>
+        <!-- <textarea class="pythonTextArea" ng-model="textareaValue"></textarea> -->
+        <div ng-keypress="onKey($event)" ui-ace="{
+              useWrapMode : true,
+              mode: 'python'}" ng-model="textareaValue">
+        </div>
+    </div>
+    <md-button ng-click="onRun()">Run</md-button>
+    <div>
+        <h3>Output:</h3>
+        <pre>{{output}}</pre>
+    </div>
+    <div ng-show="errors != null">
+        <h3>Errors:</h3>
+        <pre>{{errors}}</pre>
+    </div>
+    <div ng-show="traceback != null">
+        <h3>Traceback:</h3>
+        <pre>{{traceback}}</pre>
+    </div>
+
+</div>

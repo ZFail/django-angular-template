@@ -1,0 +1,8 @@
+.pythonTextArea {
+    width: 90%;
+    height: 300px;
+}
+.ace_editor { height: 300px; }
+#main {
+    padding: 20px;
+}

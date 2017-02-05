@@ -1,0 +1,7 @@
+**/__pycache__
+/backend/backups
+/backend/src
+/frontend/bower_components
+/nginx-access.log
+/nginx-error.log
+/nginx.pid
